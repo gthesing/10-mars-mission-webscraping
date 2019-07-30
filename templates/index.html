@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -32,17 +39,54 @@
             <img class="img-fluid" src="{{ mars.jpl.featured_image_url }}" alt="JPL-image">
           </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-4">
-          <div class="row my-4">
+        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-5">
+          <div class="row my-4 mx-4">
             <h2><em>Latest News</em></h2>
             <h6>{{ mars.news.news_title }}</h6>
             <p>{{ mars.news.news_text }}</p>
           </div>
-          <div class="row my-4" id="marsFacts">
-            <!-- <h2><em>Facts about Mars</em></h2> -->
+          <div class="row my-4 mx-4" id="marsFacts">
+            <h2><em>Facts about Mars</em></h2>
             <div id="marsFactsString">
-              <!-- {{ mars.facts.string }} -->
+              <table>
+                <tr>
+                  <th>{{ mars.facts.facts_table[0] }}</th>
+                  <th>{{ mars.facts.facts_table[1] }}</th>
+                  <th>{{ mars.facts.facts_table[2] }}</th>
+                </tr>
+                <tr>
+                  <td>{{ mars.facts.facts_table[3] }}</td>
+                  <td>{{ mars.facts.facts_table[4] }}</td>
+                  <td>{{ mars.facts.facts_table[5] }}</td>
+                </tr>
+                <tr>
+                  <td>{{ mars.facts.facts_table[6] }}</td>
+                  <td>{{ mars.facts.facts_table[7] }}</td>
+                  <td>{{ mars.facts.facts_table[8] }}</td>
+                </tr>
+                <tr>
+                  <td>{{ mars.facts.facts_table[9] }}</td>
+                  <td>{{ mars.facts.facts_table[10] }}</td>
+                  <td>{{ mars.facts.facts_table[11] }}</td>
+                </tr>
+                <tr>
+                  <td>{{ mars.facts.facts_table[12] }}</td>
+                  <td>{{ mars.facts.facts_table[13] }}</td>
+                  <td>{{ mars.facts.facts_table[14] }}</td>
+                </tr>
+                <tr>
+                  <td>{{ mars.facts.facts_table[15] }}</td>
+                  <td>{{ mars.facts.facts_table[16] }}</td>
+                  <td>{{ mars.facts.facts_table[17] }}</td>
+                </tr>
+                <tr>
+                  <td>{{ mars.facts.facts_table[18] }}</td>
+                  <td>{{ mars.facts.facts_table[19] }}</td>
+                  <td>{{ mars.facts.facts_table[20] }}</td>
+                </tr>
+              </table>
+              {{ mars.facts.facts_table[] }}
             </div>
           </div>
         </div>

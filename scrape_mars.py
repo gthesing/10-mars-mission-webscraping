@@ -83,19 +83,25 @@ def scrape_mars_facts(url):
     
     browser = init_browser()
     browser.visit(url)
-    html = browser.html
-    soup = bs(html, "html.parser")
 
-    table_html = soup.find("table")
-    mars_facts_string = str(table_html)
-    encoded_mars_facts = table_html.encode('utf8')
-
-    mars_facts = {
-        'string': mars_facts_string,
-        'encoded': encoded_mars_facts
-    }
+    facts = []
+    c1 = 0
+    c2 = 0
     
-    browser.quit()
+    ths = browser.find_by_tag("th")
+    tds = browser.find_by_tag("td")
+
+    while c1 < 3:
+        facts.append(ths[c1].value)
+        c1 = c1 + 1
+
+    while c2 < 18:
+        facts.append(tds[c2].value)
+        c2 = c2 + 1
+        
+    mars_facts = {
+        'facts_table': facts
+    }
     
     return mars_facts
 
