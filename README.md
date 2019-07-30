@@ -9,6 +9,6 @@ The flask app starts by populating a locally hosted [html page](https://github.c
 
 ***** 
 
-![screenshot1](https://github.com/gthesing/10-mars-mission-webscraping/blob/master/images/mars_ss1.JPG)
+![screenshot3](https://github.com/gthesing/10-mars-mission-webscraping/blob/master/images/mars_ss3.JPG)
 ![screenshot2](https://github.com/gthesing/10-mars-mission-webscraping/blob/master/images/mars_ss2.JPG)
 
