@@ -1,5 +1,5 @@
 # mars-mission-webscraping
-UT data bootcamp webscraping project, using jupyter, BeautifulSoup, Flask, PyMongo, MongoDB, HTML and Bootstrap CSS
+UT data bootcamp webscraping project, using jupyter, Splinter (abstraction layer built on Selenium), BeautifulSoup, Flask, PyMongo, MongoDB, HTML and Bootstrap CSS
 
 *****
 
