@@ -103,6 +103,7 @@ def scrape_mars_facts(url):
         'facts_table': facts
     }
     
+    browser.quit()
     return mars_facts
 
 # ### Mars Hemispheres
