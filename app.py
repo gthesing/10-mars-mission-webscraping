@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
 import scrape_mars
+import json
 
 
 # Create Flask instance
@@ -23,7 +24,11 @@ def scrape():
     
     mongo.db.collection.update({}, mars_data, upsert=True)
 
+    with open('mars.json', 'w') as f:
+        json.dump(mars_data, f)
+
     return redirect('/')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
