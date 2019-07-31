@@ -1,4 +1,4 @@
-# mars-mission-webscraping
+# Mars Webscrape
 UT data bootcamp webscraping project, using jupyter, Splinter (abstraction layer built on Selenium), BeautifulSoup, Flask, PyMongo, MongoDB, HTML, and Bootstrap CSS
 
 *****
